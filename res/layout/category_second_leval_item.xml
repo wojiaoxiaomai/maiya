@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/name_click_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:background="@color/bg_grey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/name_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/btn_margin"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="食品"
+            android:textColor="@color/login_text_color"
+            android:textSize="@dimen/text_size_midle" />
+
+        <ImageView style="@style/personal_center_arrow_img_style" />
+    </LinearLayout>
+
+    <com.choncheng.maya.customview.NoScrollGridView
+        android:layout_marginLeft="@dimen/btn_margin"
+        android:layout_marginRight="@dimen/btn_margin"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:stretchMode="columnWidth" >
+    </com.choncheng.maya.customview.NoScrollGridView>
+
+</LinearLayout>

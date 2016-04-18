@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/good_image"
+        android:layout_width="@dimen/goods_image_width"
+        android:layout_height="@dimen/goods_image_height"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.choncheng.maya"
+    android:versionCode="7"
+    android:versionName="1.6.8" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.choncheng.maya.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_ic"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.choncheng.maya.login.IndexActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+                        <activity
+            android:name="com.choncheng.maya.login.WelcomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+                <activity
+            android:name="com.choncheng.maya.MainActivity"
+            android:screenOrientation="portrait" 
+              android:launchMode="singleTask">
+        </activity>
+        
+        <activity
+            android:name="com.choncheng.maya.homepage.HomePageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.category.CategoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.personal.PersonalCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.personal.PersonalCenterSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.personal.PersonalCenterMsgActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.personal.PersonalCollectionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.personal.AboutUsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.personal.XieyiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.personal.PersonalInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.personal.PersonalOrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.shoppingcart.ShoppingCartActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.login.RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.login.ChangePasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.login.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.login.RegisterNextActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.login.ForgetPasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.personal.PersonalAddressActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.personal.PersonalAddressAddActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.search.SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.search.SearchFilterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.shoppingcart.GoodsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.shoppingcart.GoodsDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.shoppingcart.GoodsCommentsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.personal.PersonalOrderDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.personal.PersonalOrderCommentsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.login.ForgetPasswordNextActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.login.ChangePasswordNextActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.choncheng.maya.shoppingcart.GoodsSettlementActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- alipay sdk end -->
+           <service android:name="com.choncheng.maya.MsgService" >
+            <intent-filter>
+                <action android:name="com.choucheng.service" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

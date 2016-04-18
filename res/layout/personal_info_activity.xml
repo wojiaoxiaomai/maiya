@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_app_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            style="@style/personal_info_txt_style"
+            android:text="头像修改" />
+
+        <ImageView
+            android:src="@drawable/mrtx_pic"
+            android:id="@+id/head_image"
+            android:layout_width="@dimen/head_size"
+            android:layout_height="@dimen/head_size"
+            android:layout_marginLeft="-10dp" />
+    </LinearLayout>
+
+    <View style="@style/grey_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/personal_info_txt_style"
+            android:text="昵称" />
+
+        <EditText
+            android:id="@+id/nack_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入昵称"
+            android:maxLength="40"
+            android:singleLine="true"
+            android:textColorHint="@color/textview_hint_grey"
+            android:textSize="@dimen/text_size_midle" />
+    </LinearLayout>
+
+    <View style="@style/grey_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/personal_info_txt_style"
+            android:text="性别" />
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/btn_1"
+                style="@style/custom_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="18dp"
+                android:text="男"
+                android:textColor="@color/textview_hint_grey" />
+
+            <RadioButton
+                android:id="@+id/btn_2"
+                style="@style/custom_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="18dp"
+                android:text="女"
+                android:textColor="@color/textview_hint_grey" />
+
+            <RadioButton
+                android:id="@+id/btn_3"
+                style="@style/custom_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="18dp"
+                android:text="保密"
+                android:textColor="@color/textview_hint_grey" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View style="@style/grey_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/personal_info_txt_style"
+            android:text="出生日期" />
+
+        <EditText
+            android:id="@+id/birthday_edit"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="请选择出生日期"
+            android:textColor="@color/textview_hint_grey"
+            android:textSize="@dimen/text_size_midle" />
+    </LinearLayout>
+
+    <View style="@style/grey_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/personal_info_txt_style"
+            android:text="联系电话" />
+
+        <EditText
+            android:id="@+id/phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入联系电话"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColorHint="@color/textview_hint_grey"
+            android:textSize="@dimen/text_size_midle" />
+    </LinearLayout>
+
+    <View style="@style/grey_line_style" />
+
+    <Button
+        android:id="@+id/save_btn"
+        style="@style/btn_green_style"
+        android:layout_marginLeft="@dimen/btn_margin"
+        android:layout_marginRight="@dimen/btn_margin"
+        android:layout_marginTop="30dp"
+        android:text="@string/save" />
+
+</LinearLayout>

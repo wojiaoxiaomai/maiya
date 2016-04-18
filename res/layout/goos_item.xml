@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gridview_item_bg"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@+id/diver_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/bg_grey"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <View style="@style/grey_line_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/diver_view"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/single_good_img"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/content_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="这个是商品的供电公司这个是商品的这个是商品的供电公司这个是商品的供电公司共阿这个是商品的供电公司共阿这个是商品的供电公司共阿共阿供电公司共阿这个是商品的供电公司共阿这个是商品的供电公司共阿共阿"
+            android:textColor="@color/login_text_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/actual_price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:text="Y 20.0"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/before_price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:text="Y 20"
+                android:textColor="@color/textview_grey"
+                android:textSize="@dimen/text_size_small_more" />
+
+            <ImageView
+                android:id="@+id/gouwuche_image"
+                android:layout_width="@dimen/click_image_size"
+                android:layout_height="@dimen/click_image_size"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/addgouwu_ic_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

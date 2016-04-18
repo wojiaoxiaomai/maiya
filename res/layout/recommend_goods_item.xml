@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/btn_margin"
+    android:paddingTop="8dp" >
+
+    <ImageView
+        android:id="@+id/good_img"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/good_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/btn_margin"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLength="60"
+        android:singleLine="true"
+        android:text="这个是内容的介绍哦"
+        android:textColor="@color/textview_grey"
+        android:textSize="@dimen/text_size_small" />
+
+</LinearLayout>

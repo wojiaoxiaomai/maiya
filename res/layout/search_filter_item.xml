@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/good_image"
+        android:layout_width="@dimen/goods_image_width"
+        android:layout_height="@dimen/goods_image_height"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="这个是商品这个是商品的标题的的哦度这个是商品的标题的的哦度这个是商品的标题的的哦度的标题的的哦度 "
+            android:textSize="@dimen/text_size_midle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/actual_price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="￥300 "
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_midle" />
+
+            <TextView
+                android:id="@+id/before_price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥250 "
+                android:textColor="@color/textview_grey"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="8dp" >
+
+        <ImageView
+            android:id="@+id/shoucang_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shoucang_icon_press"
+            android:scaleType="center"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/gouwuche_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:src="@drawable/addgouwu_ic_normal" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="text_empty_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textview_grey</item>
+        <item name="android:textSize">@dimen/text_size_midle</item>
+    </style>
+
+    <style name="btn_green_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:background">@drawable/green_btn_selector</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="btn_grey_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:background">@drawable/grey_btn_selector</item>
+        <item name="android:textColor">@color/textview_grey</item>
+    </style>
+
+    <style name="grey_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+
+    <style name="custom_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:textColor">@color/textview_hint_grey</item>
+        <item name="android:paddingLeft">18dp</item>
+    </style>
+
+    <style name="myorder_img_style">
+        <item name="android:layout_width">@dimen/myorder_img_size</item>
+        <item name="android:layout_height">@dimen/myorder_img_size</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="myorder_txt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textview_hint_grey</item>
+        <item name="android:textSize">@dimen/text_size_midle</item>
+        <item name="android:layout_marginTop">@dimen/myorder_text_margin</item>
+    </style>
+
+    <style name="personal_center_img_style">
+        <item name="android:layout_width">@dimen/personal_center_img_size</item>
+        <item name="android:layout_height">@dimen/personal_center_img_size</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/btn_margin</item>
+        <item name="android:layout_marginRight">@dimen/login_edit_padding_left</item>
+    </style>
+
+    <style name="personal_center_txt_style">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:textSize">@dimen/text_size_midle</item>
+    </style>
+
+    <style name="personal_center_arrow_img_style">
+        <item name="android:layout_width">@dimen/personal_center_img_size</item>
+        <item name="android:layout_height">@dimen/personal_center_img_size</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/xuanze_ic</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/btn_margin</item>
+    </style>
+
+    <style name="personal_info_txt_style">
+        <item name="android:layout_marginLeft">@dimen/btn_margin</item>
+        <item name="android:layout_marginRight">28dp</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:textSize">@dimen/text_size_midle</item>
+    </style>
+
+    <style name="search_filter_txt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textview_grey</item>
+        <item name="android:textSize">@dimen/text_size_midle</item>
+    </style>
+
+    <style name="order_detail_title_txt_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/category_grey_color</item>
+        <item name="android:paddingLeft">@dimen/btn_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:textColor">@color/textview_grey</item>
+        <item name="android:textSize">@dimen/text_size_midle</item>
+    </style>
+
+    <style name="order_detail_title_black_txt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textview_grey</item>
+        <item name="android:textSize">@dimen/text_size_midle</item>
+    </style>
+
+    <style name="order_detail_title_grey_txt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textview_hint_grey</item>
+        <item name="android:textSize">@dimen/text_size_midle</item>
+    </style>
+
+    <style name="goods_not_empty_txt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:text">@string/goods_not_empty</item>
+        <item name="android:background">@drawable/goods_not_empty_bg</item>
+        <item name="android:textSize">@dimen/text_size_small_more</item>
+    </style>
+
+    <style name="goods_empty_txt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:text">@string/goods_empty</item>
+        <item name="android:background">@drawable/goods_empty_bg</item>
+        <item name="android:textSize">@dimen/text_size_small_more</item>
+    </style>
+
+    <style name="msg_text_date_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@color/textview_hint_grey</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+ <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    
+</resources>

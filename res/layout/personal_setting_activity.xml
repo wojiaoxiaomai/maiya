@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_app_title" />
+
+    <View
+        style="@style/grey_line_style"
+        android:layout_marginTop="@dimen/setting_btn_margin_top" />
+
+    <RelativeLayout
+        android:id="@+id/version_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/white_btn_selector" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setting_btn_margin_left_right"
+            android:text="@string/update_version"
+            android:textColor="@color/login_text_color"
+            android:textSize="@dimen/text_size_midle" />
+
+        <ImageView
+            android:id="@+id/img8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/setting_btn_margin_left_right"
+            android:src="@drawable/xuanze_ic" />
+
+        <TextView
+            android:id="@+id/version_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/setting_btn_margin_left_right"
+            android:layout_toLeftOf="@id/img8"
+            android:text="v1.2.2"
+            android:textColor="@color/textview_hint_grey" />
+    </RelativeLayout>
+
+    <View style="@style/grey_line_style" />
+
+    <View
+        style="@style/grey_line_style"
+        android:layout_marginTop="@dimen/setting_btn_margin_top" />
+
+    <RelativeLayout
+        android:id="@+id/about_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/white_btn_selector" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setting_btn_margin_left_right"
+            android:text="@string/about_us"
+            android:textColor="@color/login_text_color"
+            android:textSize="@dimen/text_size_midle" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/setting_btn_margin_left_right"
+            android:src="@drawable/xuanze_ic" />
+    </RelativeLayout>
+
+    <View style="@style/grey_line_style" />
+
+    <View
+        style="@style/grey_line_style"
+        android:layout_marginTop="@dimen/setting_btn_margin_top" />
+
+    <RelativeLayout
+        android:id="@+id/xieyi_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/white_btn_selector" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setting_btn_margin_left_right"
+            android:text="@string/xieyi"
+            android:textColor="@color/login_text_color"
+            android:textSize="@dimen/text_size_midle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/setting_btn_margin_left_right"
+            android:src="@drawable/xuanze_ic" />
+    </RelativeLayout>
+
+    <View style="@style/grey_line_style" />
+
+    <View
+        style="@style/grey_line_style"
+        android:layout_marginTop="@dimen/setting_btn_margin_top" />
+
+    <RelativeLayout
+        android:id="@+id/kefu_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/white_btn_selector" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setting_btn_margin_left_right"
+            android:text="@string/lianxikefu"
+            android:textColor="@color/login_text_color"
+            android:textSize="@dimen/text_size_midle" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/setting_btn_margin_left_right"
+            android:src="@drawable/xuanze_ic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/setting_btn_margin_left_right"
+            android:layout_toLeftOf="@id/img2"
+            android:text="028-86523627"
+            android:textColor="@color/textview_hint_grey" />
+    </RelativeLayout>
+
+    <View style="@style/grey_line_style" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo_setting" />
+
+    <Button
+        android:id="@+id/exit_btn"
+        style="@style/btn_green_style"
+        android:layout_marginLeft="@dimen/btn_margin"
+        android:layout_marginRight="@dimen/btn_margin"
+        android:layout_marginTop="25dp"
+        android:text="@string/exit" />
+
+</LinearLayout>

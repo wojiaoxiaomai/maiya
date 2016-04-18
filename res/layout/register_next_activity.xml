@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_app_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="40dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/yonghu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/login_btn_margin"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/grcenter_pic_mima" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/yonghu_img"
+                android:text="@string/mima"
+                android:textColor="@color/login_text_color"
+                android:textSize="@dimen/text_size_midle" />
+
+            <ImageButton
+                android:id="@+id/pwd_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/login_btn_margin"
+                android:background="@drawable/delete_btn_select"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/pwd_line_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/setting_btn_margin_left_right"
+                android:layout_marginRight="@dimen/setting_btn_margin_left_right"
+                android:background="@drawable/denglu_bt_normal" />
+
+            <EditText
+                android:id="@+id/pwd_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/pwd_delete"
+                android:layout_toRightOf="@id/name"
+                android:background="@null"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"
+                android:gravity="center_vertical"
+                android:hint="@string/mima_hint"
+                android:inputType="textPassword"
+                android:maxLength="40"
+                android:paddingLeft="@dimen/login_edit_padding_left"
+                android:singleLine="true"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/textview_grey"
+                android:textSize="@dimen/text_size_midle" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="5dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/yonghu_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/login_btn_margin"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/grcenter_pic_mima" />
+
+            <TextView
+                android:id="@+id/yanzhengma"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/yonghu_img1"
+                android:text="@string/pwd_sure"
+                android:textColor="@color/login_text_color"
+                android:textSize="@dimen/text_size_midle" />
+
+            <ImageButton
+                android:id="@+id/pwd_again_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/login_btn_margin"
+                android:background="@drawable/delete_btn_select"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/pwd_again_line_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/setting_btn_margin_left_right"
+                android:layout_marginRight="@dimen/setting_btn_margin_left_right"
+                android:background="@drawable/denglu_bt_normal" />
+
+            <EditText
+                android:id="@+id/pwd_again_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/pwd_again_delete"
+                android:layout_toRightOf="@id/yanzhengma"
+                android:background="@null"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"
+                android:gravity="center_vertical"
+                android:hint="@string/mima_again_hint"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/login_edit_padding_left"
+                android:singleLine="true"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/textview_grey"
+                android:textSize="@dimen/text_size_midle" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/btn_margin"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/check_box"
+            style="@style/custom_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingLeft="18dp"
+            android:text="@string/agree"
+            android:textSize="@dimen/text_size_midle" />
+
+        <TextView
+            android:id="@+id/xieyi_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/service_xiyi"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_size_midle" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_btn"
+        style="@style/btn_green_style"
+        android:layout_marginLeft="@dimen/btn_margin"
+        android:layout_marginRight="@dimen/btn_margin"
+        android:layout_marginTop="40dp"
+        android:enabled="false"
+        android:text="@string/register_now" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/btn_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/head_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/logo_homepage" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名字"
+                android:textColor="@color/login_text_color"
+                android:textSize="@dimen/text_size_midle" />
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="2015/1/1 12:23:32"
+                android:textColor="@color/textview_grey"
+                android:textSize="@dimen/text_size_midle" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/leval_txt"
+            android:textColor="@color/white"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:background="@drawable/commens_haoping_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:text="好评"
+            android:textSize="@dimen/text_size_midle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="这个是这个是内容的哈哈哈哈哈啊哈这个是内容的哈哈哈哈哈啊哈这个是内容的哈哈哈哈哈啊哈这个是内容的哈哈哈哈哈啊哈这个是内容的哈哈哈哈哈啊哈内容的哈哈哈哈哈啊哈"
+        android:textColor="@color/textview_hint_grey" />
+
+</LinearLayout>

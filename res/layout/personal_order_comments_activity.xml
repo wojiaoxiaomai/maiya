@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_app_title" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/btn_1"
+            android:layout_width="@dimen/radio_btn_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/radio_btn_margin_right"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/checkbox_selector"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="好评"
+            android:textColor="@drawable/radio_btn_text"
+            android:textSize="@dimen/text_size_midle" />
+
+        <RadioButton
+            android:id="@+id/btn_2"
+            android:layout_width="@dimen/radio_btn_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/radio_btn_margin_right"
+            android:button="@null"
+            android:checked="false"
+            android:drawableLeft="@drawable/checkbox_selector"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="中评"
+            android:textColor="@drawable/radio_btn_text"
+            android:textSize="@dimen/text_size_midle" />
+
+        <RadioButton
+            android:id="@+id/btn_3"
+            android:layout_width="@dimen/radio_btn_width"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="false"
+            android:drawableLeft="@drawable/checkbox_selector"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="差评"
+            android:textColor="@drawable/radio_btn_text"
+            android:textSize="@dimen/text_size_midle" />
+    </RadioGroup>
+
+    <com.choncheng.maya.customview.ResizeListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/category_grey_color"
+        android:dividerHeight="10dp" >
+    </com.choncheng.maya.customview.ResizeListView>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="@dimen/order_detail_btn_short_btn_width"
+        android:layout_height="@dimen/edit_height"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/green"
+        android:text="提 交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_big" />
+
+</LinearLayout>
